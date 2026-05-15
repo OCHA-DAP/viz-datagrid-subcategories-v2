@@ -136,6 +136,7 @@ function createTable() {
 
   table.append('tbody');
   buildRows();
+  document.querySelector('.loader').style.display = 'none';
 }
 
 

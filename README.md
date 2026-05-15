@@ -69,11 +69,9 @@ src/
     styles.scss       — component styles
     _variables.scss   — HDX design tokens (colors, type, spacing)
     _tokens.scss      — CSS custom properties (:root)
-    _fonts.scss       — Humanitarian Icons icon font
     _grid.scss        — layout grid
-    _loader.scss      — loading spinner
+    _loader.scss      — pulsing dots loading animation
   assets/
-    fonts/            — Humanitarian Icons font files
     icons/            — SVG category icons
   data/               — local data files
 dist/                 — built output (git-ignored, published to gh-pages)
