@@ -3,8 +3,6 @@
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 30px;
   grid-template-rows: auto;
-  margin: 0 auto;
-  max-width: 1173px;
   &.center--vertical {
     align-items: center;
   }

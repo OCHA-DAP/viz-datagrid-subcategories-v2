@@ -238,6 +238,7 @@ i[class^='humanitarianicons-'] {
 		color: $hdx-neutral-95;
 		font-size: $fs-xs;
 		padding-bottom: $space-4;
+		transition: color 0.1s ease;
 		&.rotate {
 			font-weight: $fw-regular;
 			white-space: nowrap;
@@ -246,9 +247,12 @@ i[class^='humanitarianicons-'] {
 				width: 30px;
 			}
 		}
+		&.active {
+			color: $hdx-primary-5;
+		}
 	}
 	tr td {
-		border: 0.5px solid $hdx-neutral-3;
+		border: 0.5px solid $hdx-neutral-5;
 		font-size: $fs-xs;
 		height: 20px;
 		&.subcategory {
@@ -288,10 +292,17 @@ i[class^='humanitarianicons-'] {
 		&.Empty {
 			background-color: $color-unavailable;
 		}
+		&.completeness {
+			&.Complete:hover, &.Incomplete:hover {
+				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.55);
+			}
+			&.Empty:hover, &.NA:hover {
+				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25);
+			}
+		}
 	}
 	tr {
-		background-color: $color-bg;
-		transition: background-color 0.5s ease-out, opacity 0.1s ease-in-out;
+		transition: background-color 0.15s ease, opacity 0.1s ease-in-out;
 		&.active {
 			background-color: $hdx-primary-1;
 		}
