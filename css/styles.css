@@ -1,3 +1,124 @@
+:root {
+  --hdx-brand-0: #ffffff;
+  --hdx-brand-05: #e9f5f1;
+  --hdx-brand-1: #d4eae4;
+  --hdx-brand-15: #bee0d6;
+  --hdx-brand-2: #a8d5c9;
+  --hdx-brand-3: #7dc1ad;
+  --hdx-brand-4: #51ac92;
+  --hdx-brand-5: #269777;
+  --hdx-brand-6: #1e795f;
+  --hdx-brand-7: #18614c;
+  --hdx-brand-8: #0f3c30;
+  --hdx-brand-85: #0b2d24;
+  --hdx-brand-9: #081e18;
+  --hdx-brand-95: #040f0c;
+  --hdx-brand-10: #000000;
+  --hdx-primary-0: #ffffff;
+  --hdx-primary-05: #e8effb;
+  --hdx-primary-1: #d1e0f7;
+  --hdx-primary-15: #bad0f3;
+  --hdx-primary-2: #a3c0ef;
+  --hdx-primary-3: #74a1e8;
+  --hdx-primary-4: #4681e0;
+  --hdx-primary-5: #1862d8;
+  --hdx-primary-6: #134ead;
+  --hdx-primary-7: #0e3b82;
+  --hdx-primary-8: #0a2756;
+  --hdx-primary-85: #071d41;
+  --hdx-primary-9: #05142b;
+  --hdx-neutral-0: #ffffff;
+  --hdx-neutral-01: #fafbfb;
+  --hdx-neutral-05: #f5f7f7;
+  --hdx-neutral-1: #ebeff0;
+  --hdx-neutral-15: #e2e8e8;
+  --hdx-neutral-2: #d8e0e1;
+  --hdx-neutral-3: #c4d0d1;
+  --hdx-neutral-4: #b1c1c2;
+  --hdx-neutral-5: #9db1b3;
+  --hdx-neutral-6: #7e8e8f;
+  --hdx-neutral-7: #5e6a6b;
+  --hdx-neutral-8: #3f4748;
+  --hdx-neutral-85: #2f3536;
+  --hdx-neutral-9: #1f2324;
+  --hdx-neutral-95: #101212;
+  --hdx-neutral-10: #000000;
+  --hdx-success-0: #ffffff;
+  --hdx-success-05: #eaf7f1;
+  --hdx-success-1: #cff0e0;
+  --hdx-success-2: #a8e2c7;
+  --hdx-success-3: #7ed3ad;
+  --hdx-success-4: #55c493;
+  --hdx-success-5: #2f9e6f;
+  --hdx-success-6: #26855d;
+  --hdx-success-7: #1f6b4b;
+  --hdx-success-8: #185239;
+  --hdx-success-9: #103828;
+  --hdx-warning-0: #ffffff;
+  --hdx-warning-05: #fbf4ea;
+  --hdx-warning-1: #f6e9d4;
+  --hdx-warning-2: #eed2aa;
+  --hdx-warning-3: #e5bc7f;
+  --hdx-warning-4: #dda555;
+  --hdx-warning-5: #d48f2a;
+  --hdx-warning-6: #aa7222;
+  --hdx-warning-7: #7f5619;
+  --hdx-warning-8: #553911;
+  --hdx-warning-9: #2a1d08;
+  --hdx-error-0: #ffffff;
+  --hdx-error-05: #f9eceb;
+  --hdx-error-1: #f3dad7;
+  --hdx-error-2: #e7b5af;
+  --hdx-error-3: #dc8f86;
+  --hdx-error-4: #d06a5e;
+  --hdx-error-5: #c44536;
+  --hdx-error-6: #9d372b;
+  --hdx-error-7: #762920;
+  --hdx-error-8: #4e1c16;
+  --hdx-error-9: #270e0b;
+  --hdx-space-15: 0.125rem;
+  --hdx-space-1: 0.25rem;
+  --hdx-space-13: 0.375rem;
+  --hdx-space-2: 0.5rem;
+  --hdx-space-14: 0.625rem;
+  --hdx-space-3: 0.75rem;
+  --hdx-space-4: 1rem;
+  --hdx-space-5: 1.25rem;
+  --hdx-space-6: 1.5rem;
+  --hdx-space-8: 2rem;
+  --hdx-space-10: 2.5rem;
+  --hdx-space-12: 3rem;
+  --hdx-space-16: 0.875rem;
+  --hdx-radius-sm: 2px;
+  --hdx-radius-md: 4px;
+  --hdx-shadow-none: none;
+  --hdx-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.04);
+  --hdx-shadow-md: 0 4px 10px rgba(0, 0, 0, 0.12);
+  --hdx-shadow-lg: 0 8px 35px rgba(0, 0, 0, 0.16);
+  --hdx-shadow-overlay: 0 4px 16px rgba(0, 0, 0, 0.30);
+  --hdx-overlay-white-10: rgba(255, 255, 255, 0.10);
+  --hdx-overlay-white-15: rgba(255, 255, 255, 0.15);
+  --hdx-overlay-white-90: rgba(255, 255, 255, 0.90);
+  --hdx-overlay-black-40: rgba(0, 0, 0, 0.40);
+  --hdx-font-display: "Merriweather", serif;
+  --hdx-font-body: "Roboto", sans-serif;
+  --hdx-fs-xs: 0.75rem;
+  --hdx-fs-s: 0.875rem;
+  --hdx-fs-m: 1rem;
+  --hdx-fs-l: 1.125rem;
+  --hdx-fs-xl: 1.25rem;
+  --hdx-fs-2xl: 1.5rem;
+  --hdx-fs-3xl: 1.75rem;
+  --hdx-fs-4xl: 2rem;
+  --hdx-fs-5xl: 3rem;
+  --hdx-fw-regular: 400;
+  --hdx-fw-medium: 500;
+  --hdx-fw-semibold: 600;
+  --hdx-fw-bold: 700;
+  --hdx-lh-tight: 1.2;
+  --hdx-lh-normal: 1.3;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -54,1374 +175,6 @@
     grid-column: 1/-1;
   }
 }
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url("../assets/fonts/Gotham-Bold.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham-Book";
-  src: url("../assets/fonts/Gotham-Book.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham-Light";
-  src: url("../assets/fonts/Gotham-Light.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Humanitarian-Icons-v02";
-  src: url("../assets/fonts/Humanitarian-Icons-v02.eot?d5h7ar");
-  src: url("../assets/fonts/Humanitarian-Icons-v02.eot?d5h7ar#iefix") format("embedded-opentype"), url("../assets/fonts/Humanitarian-Icons-v02.ttf?d5h7ar") format("truetype"), url("../assets/fonts/Humanitarian-Icons-v02.woff?d5h7ar") format("woff"), url("../assets/fonts/Humanitarian-Icons-v02.svg?d5h7ar#Humanitarian-Icons-v02") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=humanitarianicons-], [class*=" humanitarianicons-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "Humanitarian-Icons-v02" !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.humanitarianicons-Social-gh:before {
-  content: "\ea48";
-}
-
-.humanitarianicons-Social-gh-hover:before {
-  content: "\ea49";
-}
-
-.humanitarianicons-Social-mail:before {
-  content: "\ea4a";
-}
-
-.humanitarianicons-Social-mail-hover:before {
-  content: "\ea4b";
-}
-
-.humanitarianicons-Double-arrow-down:before {
-  content: "\ea3a";
-}
-
-.humanitarianicons-Double-arrow-left:before {
-  content: "\ea3b";
-}
-
-.humanitarianicons-Double-arrow-right:before {
-  content: "\ea3c";
-}
-
-.humanitarianicons-Double-arrow-up:before {
-  content: "\ea3d";
-}
-
-.humanitarianicons-Social-fb-hover:before {
-  content: "\ea3e";
-}
-
-.humanitarianicons-Social-fb:before {
-  content: "\ea3f";
-}
-
-.humanitarianicons-Social-ig-hover:before {
-  content: "\ea40";
-}
-
-.humanitarianicons-Social-ig:before {
-  content: "\ea41";
-}
-
-.humanitarianicons-Social-li-hover:before {
-  content: "\ea42";
-}
-
-.humanitarianicons-Social-li:before {
-  content: "\ea43";
-}
-
-.humanitarianicons-Social-tw-hover:before {
-  content: "\ea44";
-}
-
-.humanitarianicons-Social-tw:before {
-  content: "\ea45";
-}
-
-.humanitarianicons-Social-yt-hover:before {
-  content: "\ea46";
-}
-
-.humanitarianicons-Social-yt:before {
-  content: "\ea47";
-}
-
-.humanitarianicons-Abduction-kidnapping:before {
-  content: "\e900";
-}
-
-.humanitarianicons-About:before {
-  content: "\e901";
-}
-
-.humanitarianicons-Add:before {
-  content: "\e902";
-}
-
-.humanitarianicons-Add-document:before {
-  content: "\e903";
-}
-
-.humanitarianicons-Advocacy:before {
-  content: "\e904";
-}
-
-.humanitarianicons-Affected-population:before {
-  content: "\e905";
-}
-
-.humanitarianicons-Agriculture:before {
-  content: "\e906";
-}
-
-.humanitarianicons-Airport:before {
-  content: "\e907";
-}
-
-.humanitarianicons-Airport-affected:before {
-  content: "\e908";
-}
-
-.humanitarianicons-Airport-destroyed:before {
-  content: "\e909";
-}
-
-.humanitarianicons-Airport-military:before {
-  content: "\e90a";
-}
-
-.humanitarianicons-Airport-not-affected:before {
-  content: "\e90b";
-}
-
-.humanitarianicons-Alert:before {
-  content: "\e90c";
-}
-
-.humanitarianicons-Analysis:before {
-  content: "\e90d";
-}
-
-.humanitarianicons-Arrest-detention:before {
-  content: "\e90e";
-}
-
-.humanitarianicons-Assault:before {
-  content: "\e90f";
-}
-
-.humanitarianicons-Assembly-point:before {
-  content: "\e910";
-}
-
-.humanitarianicons-Assessment:before {
-  content: "\e911";
-}
-
-.humanitarianicons-Attack:before {
-  content: "\e912";
-}
-
-.humanitarianicons-Blanket:before {
-  content: "\e913";
-}
-
-.humanitarianicons-Blog:before {
-  content: "\e914";
-}
-
-.humanitarianicons-Boat:before {
-  content: "\e915";
-}
-
-.humanitarianicons-Bookmark:before {
-  content: "\e916";
-}
-
-.humanitarianicons-Border-crossing:before {
-  content: "\e917";
-}
-
-.humanitarianicons-Borehole:before {
-  content: "\e918";
-}
-
-.humanitarianicons-Bottled-water:before {
-  content: "\e919";
-}
-
-.humanitarianicons-Bridge:before {
-  content: "\e91a";
-}
-
-.humanitarianicons-Bridge-affected:before {
-  content: "\e91b";
-}
-
-.humanitarianicons-Bridge-destroyed:before {
-  content: "\e91c";
-}
-
-.humanitarianicons-Bridge-not-affected:before {
-  content: "\e91d";
-}
-
-.humanitarianicons-Bucket:before {
-  content: "\e91e";
-}
-
-.humanitarianicons-Buddhist-temple:before {
-  content: "\e91f";
-}
-
-.humanitarianicons-Building:before {
-  content: "\e920";
-}
-
-.humanitarianicons-Building-facility-affected:before {
-  content: "\e921";
-}
-
-.humanitarianicons-Building-facility-destroyed:before {
-  content: "\e922";
-}
-
-.humanitarianicons-Building-facility-not-affected:before {
-  content: "\e923";
-}
-
-.humanitarianicons-Bus:before {
-  content: "\e924";
-}
-
-.humanitarianicons-Calendar:before {
-  content: "\e925";
-}
-
-.humanitarianicons-Camp-Coordination-and-Camp-Management:before {
-  content: "\e926";
-}
-
-.humanitarianicons-Car:before {
-  content: "\e927";
-}
-
-.humanitarianicons-Carjacking:before {
-  content: "\e928";
-}
-
-.humanitarianicons-Cash-transfer:before {
-  content: "\e929";
-}
-
-.humanitarianicons-Cell-tower:before {
-  content: "\e92a";
-}
-
-.humanitarianicons-Chart:before {
-  content: "\e92b";
-}
-
-.humanitarianicons-Chat:before {
-  content: "\e92c";
-}
-
-.humanitarianicons-Checkpoint:before {
-  content: "\e92d";
-}
-
-.humanitarianicons-Child-care-child-friendly:before {
-  content: "\e92e";
-}
-
-.humanitarianicons-Child-combatant:before {
-  content: "\e92f";
-}
-
-.humanitarianicons-Child-protection:before {
-  content: "\e930";
-}
-
-.humanitarianicons-Children:before {
-  content: "\e931";
-}
-
-.humanitarianicons-Church:before {
-  content: "\e932";
-}
-
-.humanitarianicons-Civil-military-coordination:before {
-  content: "\e933";
-}
-
-.humanitarianicons-Clinic:before {
-  content: "\e934";
-}
-
-.humanitarianicons-Clothing:before {
-  content: "\e935";
-}
-
-.humanitarianicons-Cold-wave:before {
-  content: "\e936";
-}
-
-.humanitarianicons-Communal-latrine:before {
-  content: "\e937";
-}
-
-.humanitarianicons-Community-building:before {
-  content: "\e938";
-}
-
-.humanitarianicons-Community-engagement:before {
-  content: "\e939";
-}
-
-.humanitarianicons-Computer:before {
-  content: "\e93a";
-}
-
-.humanitarianicons-Conflict:before {
-  content: "\e93b";
-}
-
-.humanitarianicons-Coordinated-assessement:before {
-  content: "\e93c";
-}
-
-.humanitarianicons-Coordination:before {
-  content: "\e93d";
-}
-
-.humanitarianicons-Copy:before {
-  content: "\e93e";
-}
-
-.humanitarianicons-Cyclone:before {
-  content: "\e93f";
-}
-
-.humanitarianicons-Damaged-Affected:before {
-  content: "\e940";
-}
-
-.humanitarianicons-Dangerous-area:before {
-  content: "\e941";
-}
-
-.humanitarianicons-Data:before {
-  content: "\e942";
-}
-
-.humanitarianicons-Dead:before {
-  content: "\e943";
-}
-
-.humanitarianicons-Debris-management:before {
-  content: "\e944";
-}
-
-.humanitarianicons-Deployment:before {
-  content: "\e945";
-}
-
-.humanitarianicons-Destroyed:before {
-  content: "\e946";
-}
-
-.humanitarianicons-Detergent:before {
-  content: "\e947";
-}
-
-.humanitarianicons-Diplomatic-mission:before {
-  content: "\e948";
-}
-
-.humanitarianicons-Distribution-site:before {
-  content: "\e949";
-}
-
-.humanitarianicons-Document:before {
-  content: "\e94a";
-}
-
-.humanitarianicons-Down:before {
-  content: "\e94b";
-}
-
-.humanitarianicons-Download:before {
-  content: "\e94c";
-}
-
-.humanitarianicons-Drought:before {
-  content: "\e94d";
-}
-
-.humanitarianicons-Drowned:before {
-  content: "\e94e";
-}
-
-.humanitarianicons-E-mail:before {
-  content: "\e94f";
-}
-
-.humanitarianicons-Early-Recovery:before {
-  content: "\e950";
-}
-
-.humanitarianicons-Earthmound:before {
-  content: "\e951";
-}
-
-.humanitarianicons-Earthquake:before {
-  content: "\e952";
-}
-
-.humanitarianicons-Education:before {
-  content: "\e953";
-}
-
-.humanitarianicons-Elderly:before {
-  content: "\e954";
-}
-
-.humanitarianicons-Emergency-Telecommunications:before {
-  content: "\e955";
-}
-
-.humanitarianicons-Environment:before {
-  content: "\e956";
-}
-
-.humanitarianicons-Epidemic:before {
-  content: "\e957";
-}
-
-.humanitarianicons-Exit-Cancel:before {
-  content: "\e958";
-}
-
-.humanitarianicons-Famine:before {
-  content: "\e959";
-}
-
-.humanitarianicons-Favourite:before {
-  content: "\e95a";
-}
-
-.humanitarianicons-Fax:before {
-  content: "\e95b";
-}
-
-.humanitarianicons-Ferry:before {
-  content: "\e95c";
-}
-
-.humanitarianicons-Film:before {
-  content: "\e95d";
-}
-
-.humanitarianicons-Filter:before {
-  content: "\e95e";
-}
-
-.humanitarianicons-Financing:before {
-  content: "\e95f";
-}
-
-.humanitarianicons-Fire:before {
-  content: "\e960";
-}
-
-.humanitarianicons-Fishery:before {
-  content: "\e961";
-}
-
-.humanitarianicons-Flash-flood:before {
-  content: "\e962";
-}
-
-.humanitarianicons-Flood:before {
-  content: "\e963";
-}
-
-.humanitarianicons-Flour:before {
-  content: "\e964";
-}
-
-.humanitarianicons-Folder:before {
-  content: "\e965";
-}
-
-.humanitarianicons-Food:before {
-  content: "\e966";
-}
-
-.humanitarianicons-Food-Security:before {
-  content: "\e967";
-}
-
-.humanitarianicons-Food-warehouse:before {
-  content: "\e968";
-}
-
-.humanitarianicons-Forced-entry:before {
-  content: "\e969";
-}
-
-.humanitarianicons-Forced-recruitment:before {
-  content: "\e96a";
-}
-
-.humanitarianicons-Fund:before {
-  content: "\e96b";
-}
-
-.humanitarianicons-Gap-analysis:before {
-  content: "\e96c";
-}
-
-.humanitarianicons-Gas-station:before {
-  content: "\e96d";
-}
-
-.humanitarianicons-Go:before {
-  content: "\e96e";
-}
-
-.humanitarianicons-Government-office:before {
-  content: "\e96f";
-}
-
-.humanitarianicons-Group:before {
-  content: "\e970";
-}
-
-.humanitarianicons-Harassment-intimidation:before {
-  content: "\e971";
-}
-
-.humanitarianicons-Health:before {
-  content: "\e972";
-}
-
-.humanitarianicons-Health-facility:before {
-  content: "\e973";
-}
-
-.humanitarianicons-Health-facility-affected:before {
-  content: "\e974";
-}
-
-.humanitarianicons-Health-facility-destroyed:before {
-  content: "\e975";
-}
-
-.humanitarianicons-Health-facility-not-affected:before {
-  content: "\e976";
-}
-
-.humanitarianicons-Health-post:before {
-  content: "\e977";
-}
-
-.humanitarianicons-Heatwave:before {
-  content: "\e978";
-}
-
-.humanitarianicons-Heavy-rain:before {
-  content: "\e979";
-}
-
-.humanitarianicons-Helicopter:before {
-  content: "\e97a";
-}
-
-.humanitarianicons-Helipad:before {
-  content: "\e97b";
-}
-
-.humanitarianicons-Help:before {
-  content: "\e97c";
-}
-
-.humanitarianicons-Hidden:before {
-  content: "\e97d";
-}
-
-.humanitarianicons-Hindu-temple:before {
-  content: "\e97e";
-}
-
-.humanitarianicons-Hospital:before {
-  content: "\e97f";
-}
-
-.humanitarianicons-Hotel:before {
-  content: "\e980";
-}
-
-.humanitarianicons-House:before {
-  content: "\e981";
-}
-
-.humanitarianicons-House-affected:before {
-  content: "\e982";
-}
-
-.humanitarianicons-House-burned:before {
-  content: "\e983";
-}
-
-.humanitarianicons-House-destroyed:before {
-  content: "\e984";
-}
-
-.humanitarianicons-House-not-affected:before {
-  content: "\e985";
-}
-
-.humanitarianicons-Humanitarian-access:before {
-  content: "\e986";
-}
-
-.humanitarianicons-Humanitarian-programme-cycle:before {
-  content: "\e987";
-}
-
-.humanitarianicons-IDP-refugee-camp:before {
-  content: "\e988";
-}
-
-.humanitarianicons-Infant:before {
-  content: "\e989";
-}
-
-.humanitarianicons-Infant-formula:before {
-  content: "\e98a";
-}
-
-.humanitarianicons-Information-management:before {
-  content: "\e98b";
-}
-
-.humanitarianicons-Information-technology:before {
-  content: "\e98c";
-}
-
-.humanitarianicons-Infrastructure:before {
-  content: "\e98d";
-}
-
-.humanitarianicons-Injured:before {
-  content: "\e98e";
-}
-
-.humanitarianicons-Innovation:before {
-  content: "\e98f";
-}
-
-.humanitarianicons-Insect-infestation:before {
-  content: "\e990";
-}
-
-.humanitarianicons-Internally-displaced:before {
-  content: "\e991";
-}
-
-.humanitarianicons-Internet:before {
-  content: "\e992";
-}
-
-.humanitarianicons-Kitchen-set:before {
-  content: "\e993";
-}
-
-.humanitarianicons-Landslide-mudslide:before {
-  content: "\e994";
-}
-
-.humanitarianicons-Laptop:before {
-  content: "\e995";
-}
-
-.humanitarianicons-Latrine-cabin:before {
-  content: "\e996";
-}
-
-.humanitarianicons-Leadership:before {
-  content: "\e997";
-}
-
-.humanitarianicons-Learning:before {
-  content: "\e998";
-}
-
-.humanitarianicons-Link:before {
-  content: "\e999";
-}
-
-.humanitarianicons-Livelihood:before {
-  content: "\e99a";
-}
-
-.humanitarianicons-Livestock:before {
-  content: "\e99b";
-}
-
-.humanitarianicons-Location:before {
-  content: "\e99c";
-}
-
-.humanitarianicons-Locust-infestation:before {
-  content: "\e99d";
-}
-
-.humanitarianicons-Logistics:before {
-  content: "\e99e";
-}
-
-.humanitarianicons-Map:before {
-  content: "\e99f";
-}
-
-.humanitarianicons-Mattress:before {
-  content: "\e9a0";
-}
-
-.humanitarianicons-Medical-supply:before {
-  content: "\e9a1";
-}
-
-.humanitarianicons-Medicine:before {
-  content: "\e9a2";
-}
-
-.humanitarianicons-Meeting:before {
-  content: "\e9a3";
-}
-
-.humanitarianicons-Menu:before {
-  content: "\e9a4";
-}
-
-.humanitarianicons-Military-gate:before {
-  content: "\e9a5";
-}
-
-.humanitarianicons-Mine:before {
-  content: "\e9a6";
-}
-
-.humanitarianicons-Missing:before {
-  content: "\e9a7";
-}
-
-.humanitarianicons-Mobile-clinic:before {
-  content: "\e9a8";
-}
-
-.humanitarianicons-Mobile-phone:before {
-  content: "\e9a9";
-}
-
-.humanitarianicons-Monitor:before {
-  content: "\e9aa";
-}
-
-.humanitarianicons-Monitoring:before {
-  content: "\e9ab";
-}
-
-.humanitarianicons-More-options:before {
-  content: "\e9ac";
-}
-
-.humanitarianicons-Mosque:before {
-  content: "\e9ad";
-}
-
-.humanitarianicons-Mosquito-net:before {
-  content: "\e9ae";
-}
-
-.humanitarianicons-Multi-cluster-sector:before {
-  content: "\e9af";
-}
-
-.humanitarianicons-Murder:before {
-  content: "\e9b0";
-}
-
-.humanitarianicons-NGO-office:before {
-  content: "\e9b1";
-}
-
-.humanitarianicons-National-army:before {
-  content: "\e9b2";
-}
-
-.humanitarianicons-Needs-assessment:before {
-  content: "\e9b3";
-}
-
-.humanitarianicons-Next-item:before {
-  content: "\e9b4";
-}
-
-.humanitarianicons-Non-food-items:before {
-  content: "\e9b5";
-}
-
-.humanitarianicons-Non-food-items-2:before {
-  content: "\e9b6";
-}
-
-.humanitarianicons-Not-affected:before {
-  content: "\e9b7";
-}
-
-.humanitarianicons-Notification:before {
-  content: "\e9b8";
-}
-
-.humanitarianicons-Nutrition:before {
-  content: "\e9b9";
-}
-
-.humanitarianicons-Observation-tower:before {
-  content: "\e9ba";
-}
-
-.humanitarianicons-Oil:before {
-  content: "\e9bb";
-}
-
-.humanitarianicons-Out-of-platform:before {
-  content: "\e9bc";
-}
-
-.humanitarianicons-Partnership:before {
-  content: "\e9bd";
-}
-
-.humanitarianicons-Pause:before {
-  content: "\e9be";
-}
-
-.humanitarianicons-Peacekeeping-force:before {
-  content: "\e9bf";
-}
-
-.humanitarianicons-People-in-need:before {
-  content: "\e9c0";
-}
-
-.humanitarianicons-People-targeted:before {
-  content: "\e9c1";
-}
-
-.humanitarianicons-People-with-physical-impairments:before {
-  content: "\e9c2";
-}
-
-.humanitarianicons-Permanent-camp:before {
-  content: "\e9c3";
-}
-
-.humanitarianicons-Person-1:before {
-  content: "\e9c4";
-}
-
-.humanitarianicons-Person-2:before {
-  content: "\e9c5";
-}
-
-.humanitarianicons-Photo:before {
-  content: "\e9c6";
-}
-
-.humanitarianicons-Physical-closure:before {
-  content: "\e9c7";
-}
-
-.humanitarianicons-Plastic-sheeting:before {
-  content: "\e9c8";
-}
-
-.humanitarianicons-Police-station:before {
-  content: "\e9c9";
-}
-
-.humanitarianicons-Policy:before {
-  content: "\e9ca";
-}
-
-.humanitarianicons-Population-growth:before {
-  content: "\e9cb";
-}
-
-.humanitarianicons-Population-return:before {
-  content: "\e9cc";
-}
-
-.humanitarianicons-Port:before {
-  content: "\e9cd";
-}
-
-.humanitarianicons-Port-affected:before {
-  content: "\e9ce";
-}
-
-.humanitarianicons-Port-destroyed:before {
-  content: "\e9cf";
-}
-
-.humanitarianicons-Port-not-affected:before {
-  content: "\e9d0";
-}
-
-.humanitarianicons-Potable-water:before {
-  content: "\e9d1";
-}
-
-.humanitarianicons-Potable-water-source:before {
-  content: "\e9d2";
-}
-
-.humanitarianicons-Power-electricity:before {
-  content: "\e9d3";
-}
-
-.humanitarianicons-Power-electricity-affected:before {
-  content: "\e9d4";
-}
-
-.humanitarianicons-Power-electricity-not-affected:before {
-  content: "\e9d5";
-}
-
-.humanitarianicons-Power-outage:before {
-  content: "\e9d6";
-}
-
-.humanitarianicons-Pregnant:before {
-  content: "\e9d7";
-}
-
-.humanitarianicons-Preparedness:before {
-  content: "\e9d8";
-}
-
-.humanitarianicons-Previous-item:before {
-  content: "\e9d9";
-}
-
-.humanitarianicons-Print:before {
-  content: "\e9da";
-}
-
-.humanitarianicons-Protection:before {
-  content: "\e9db";
-}
-
-.humanitarianicons-Public-information:before {
-  content: "\e9dc";
-}
-
-.humanitarianicons-Radio:before {
-  content: "\e9dd";
-}
-
-.humanitarianicons-Rebel:before {
-  content: "\e9de";
-}
-
-.humanitarianicons-Reconstruction:before {
-  content: "\e9df";
-}
-
-.humanitarianicons-Refugee:before {
-  content: "\e9e0";
-}
-
-.humanitarianicons-Registration:before {
-  content: "\e9e1";
-}
-
-.humanitarianicons-Relief-goods:before {
-  content: "\e9e2";
-}
-
-.humanitarianicons-Remove:before {
-  content: "\e9e3";
-}
-
-.humanitarianicons-Remove-document:before {
-  content: "\e9e4";
-}
-
-.humanitarianicons-Report:before {
-  content: "\e9e5";
-}
-
-.humanitarianicons-Reporting:before {
-  content: "\e9e6";
-}
-
-.humanitarianicons-Response:before {
-  content: "\e9e7";
-}
-
-.humanitarianicons-Return:before {
-  content: "\e9e8";
-}
-
-.humanitarianicons-Rice:before {
-  content: "\e9e9";
-}
-
-.humanitarianicons-Road:before {
-  content: "\e9ea";
-}
-
-.humanitarianicons-Road-affected:before {
-  content: "\e9eb";
-}
-
-.humanitarianicons-Road-barrier:before {
-  content: "\e9ec";
-}
-
-.humanitarianicons-Road-destroyed:before {
-  content: "\e9ed";
-}
-
-.humanitarianicons-Road-not-affected:before {
-  content: "\e9ee";
-}
-
-.humanitarianicons-Roadblock:before {
-  content: "\e9ef";
-}
-
-.humanitarianicons-Robbery:before {
-  content: "\e9f0";
-}
-
-.humanitarianicons-Rule-of-law-and-justice:before {
-  content: "\e9f1";
-}
-
-.humanitarianicons-Rural:before {
-  content: "\e9f2";
-}
-
-.humanitarianicons-Rural-exodus:before {
-  content: "\e9f3";
-}
-
-.humanitarianicons-Safety-and-security:before {
-  content: "\e9f4";
-}
-
-.humanitarianicons-Salt:before {
-  content: "\e9f5";
-}
-
-.humanitarianicons-Sanitation:before {
-  content: "\e9f6";
-}
-
-.humanitarianicons-Satellite-dish:before {
-  content: "\e9f7";
-}
-
-.humanitarianicons-Save:before {
-  content: "\e9f8";
-}
-
-.humanitarianicons-Scale-down-operation:before {
-  content: "\e9f9";
-}
-
-.humanitarianicons-Scale-up-operation:before {
-  content: "\e9fa";
-}
-
-.humanitarianicons-School:before {
-  content: "\e9fb";
-}
-
-.humanitarianicons-School-affected:before {
-  content: "\e9fc";
-}
-
-.humanitarianicons-School-destroyed:before {
-  content: "\e9fd";
-}
-
-.humanitarianicons-School-not-affected:before {
-  content: "\e9fe";
-}
-
-.humanitarianicons-Search:before {
-  content: "\e9ff";
-}
-
-.humanitarianicons-See:before {
-  content: "\ea00";
-}
-
-.humanitarianicons-Selected:before {
-  content: "\ea01";
-}
-
-.humanitarianicons-Services-and-tools:before {
-  content: "\ea02";
-}
-
-.humanitarianicons-Settings:before {
-  content: "\ea03";
-}
-
-.humanitarianicons-Sexual-violence:before {
-  content: "\ea04";
-}
-
-.humanitarianicons-Share:before {
-  content: "\ea05";
-}
-
-.humanitarianicons-Shelter:before {
-  content: "\ea06";
-}
-
-.humanitarianicons-Ship:before {
-  content: "\ea07";
-}
-
-.humanitarianicons-Shower:before {
-  content: "\ea08";
-}
-
-.humanitarianicons-Smartphone:before {
-  content: "\ea09";
-}
-
-.humanitarianicons-Snow-avalanche:before {
-  content: "\ea0a";
-}
-
-.humanitarianicons-Snowfall:before {
-  content: "\ea0b";
-}
-
-.humanitarianicons-Soap:before {
-  content: "\ea0c";
-}
-
-.humanitarianicons-Solid-waste:before {
-  content: "\ea0d";
-}
-
-.humanitarianicons-Spontaneous-site:before {
-  content: "\ea0e";
-}
-
-.humanitarianicons-Spring-water:before {
-  content: "\ea0f";
-}
-
-.humanitarianicons-Staff-management:before {
-  content: "\ea10";
-}
-
-.humanitarianicons-Stop:before {
-  content: "\ea11";
-}
-
-.humanitarianicons-Storm:before {
-  content: "\ea12";
-}
-
-.humanitarianicons-Storm-surge:before {
-  content: "\ea13";
-}
-
-.humanitarianicons-Stove:before {
-  content: "\ea14";
-}
-
-.humanitarianicons-Submersible-pump:before {
-  content: "\ea15";
-}
-
-.humanitarianicons-Sugar:before {
-  content: "\ea16";
-}
-
-.humanitarianicons-Table:before {
-  content: "\ea17";
-}
-
-.humanitarianicons-Tarpaulin:before {
-  content: "\ea18";
-}
-
-.humanitarianicons-Technological-disaster:before {
-  content: "\ea19";
-}
-
-.humanitarianicons-Temporary-camp:before {
-  content: "\ea1a";
-}
-
-.humanitarianicons-Tent:before {
-  content: "\ea1b";
-}
-
-.humanitarianicons-Toilet:before {
-  content: "\ea1c";
-}
-
-.humanitarianicons-Top-ranking:before {
-  content: "\ea1d";
-}
-
-.humanitarianicons-Tornado:before {
-  content: "\ea1e";
-}
-
-.humanitarianicons-Trade-and-market:before {
-  content: "\ea1f";
-}
-
-.humanitarianicons-Train:before {
-  content: "\ea20";
-}
-
-.humanitarianicons-Training:before {
-  content: "\ea21";
-}
-
-.humanitarianicons-Transition-site:before {
-  content: "\ea22";
-}
-
-.humanitarianicons-Trending:before {
-  content: "\ea23";
-}
-
-.humanitarianicons-Truck:before {
-  content: "\ea24";
-}
-
-.humanitarianicons-Tsunami:before {
-  content: "\ea25";
-}
-
-.humanitarianicons-Tunnel:before {
-  content: "\ea26";
-}
-
-.humanitarianicons-UN-compound-office:before {
-  content: "\ea27";
-}
-
-.humanitarianicons-UN-vehicle:before {
-  content: "\ea28";
-}
-
-.humanitarianicons-University:before {
-  content: "\ea29";
-}
-
-.humanitarianicons-Up:before {
-  content: "\ea2a";
-}
-
-.humanitarianicons-Upload:before {
-  content: "\ea2b";
-}
-
-.humanitarianicons-Urban:before {
-  content: "\ea2c";
-}
-
-.humanitarianicons-Urban-rural:before {
-  content: "\ea2d";
-}
-
-.humanitarianicons-User:before {
-  content: "\ea2e";
-}
-
-.humanitarianicons-Users:before {
-  content: "\ea2f";
-}
-
-.humanitarianicons-Vaccine:before {
-  content: "\ea30";
-}
-
-.humanitarianicons-Video:before {
-  content: "\ea31";
-}
-
-.humanitarianicons-Violent-wind:before {
-  content: "\ea32";
-}
-
-.humanitarianicons-Volcano:before {
-  content: "\ea33";
-}
-
-.humanitarianicons-Walkie-talkie:before {
-  content: "\ea34";
-}
-
-.humanitarianicons-Warning-Error:before {
-  content: "\ea35";
-}
-
-.humanitarianicons-Water-Sanitation-and-Hygiene:before {
-  content: "\ea36";
-}
-
-.humanitarianicons-Water-source:before {
-  content: "\ea37";
-}
-
-.humanitarianicons-Water-trucking:before {
-  content: "\ea38";
-}
-
-.humanitarianicons-ZIP-compressed:before {
-  content: "\ea39";
-}
-
 .loader {
   color: #000;
   font-size: 11px;
@@ -1442,7 +195,7 @@
 /* Spinner Circle Rotation */
 .sp-circle {
   border: 4px rgba(0, 0, 0, 0.25) solid;
-  border-top: 4px rgb(0, 0, 0) solid;
+  border-top: 4px #1862d8 solid;
   border-radius: 50%;
   -webkit-animation: spCircRot 0.6s infinite linear;
   animation: spCircRot 0.6s infinite linear;
@@ -1478,12 +231,12 @@ html, body {
 }
 
 body {
-  color: #000;
+  color: #1f2324;
   display: flex;
   flex-direction: column;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
-  line-height: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3;
   margin: 0;
   padding: 0;
 }
@@ -1499,87 +252,113 @@ ul {
 }
 
 a {
-  color: #007CE0;
+  color: #1862d8;
   text-decoration: none;
 }
 
 h2 {
-  font-family: "Gotham-Bold", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 49px;
-  padding: 0 20px;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3;
+  margin: 0;
 }
-h2.header {
-  background-color: #EDF6FD;
-  border-bottom: 1px solid #CCC;
+
+.header {
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
+  padding: 1rem 1.25rem;
+}
+
+.header-left .subtitle {
+  color: #7e8e8f;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0;
+}
+
+.header-right {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 h3 {
-  font-family: "Gotham-Bold", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
+  font-family: "Merriweather", serif;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 h4 {
-  font-family: "Gotham-Bold", sans-serif;
-  font-size: 13px;
-  line-height: 13px;
-  font-weight: normal;
+  font-family: "Merriweather", serif;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: 700;
 }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
 }
 
 .small {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 1.3;
   margin: 0;
 }
 
 i[class^=humanitarianicons-] {
-  color: #007ce1;
+  color: #2f3536;
 }
 
+.control-order-by {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
 .control-order-by label {
-  font-family: "Gotham-Bold", sans-serif;
+  color: #7e8e8f;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
   font-weight: 400;
-  font-size: 12px;
-  color: #888;
-  letter-spacing: 0.03em;
-  line-height: 20px;
-  margin-right: 5px;
-  text-transform: uppercase;
+  white-space: nowrap;
 }
 .control-order-by .orderDropdown {
   display: inline;
   position: relative;
 }
 .control-order-by .orderDropdown .dropdown-toggle {
-  background-color: transparent;
-  border: none;
-  color: #007CE0;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid var(--input-field-stroke, #d8e0e1);
+  border-radius: var(--hdx-radius-sm);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.039);
+  color: #3f4748;
   cursor: pointer;
-  text-align: left;
-  margin-top: -4px;
-  padding: 0;
-  font-size: 14px;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  gap: 0.25rem;
+  letter-spacing: 0;
+  line-height: 1.3;
+  padding: 0.25rem 0.5rem;
+  vertical-align: middle;
+}
+.control-order-by .orderDropdown .dropdown-toggle:hover {
+  border-color: #b1c1c2;
 }
 .control-order-by .orderDropdown .dropdown-toggle-text {
-  font-family: "Gotham-Bold", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #007CE0;
-  letter-spacing: 0.03em;
-}
-.control-order-by .orderDropdown .dropdown-toggle-text:hover, .control-order-by .orderDropdown .dropdown-toggle-text:focus {
-  color: #00447A;
+  color: #3f4748;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3;
 }
 
 .open > .dropdown-menu {
@@ -1587,14 +366,15 @@ i[class^=humanitarianicons-] {
 }
 
 .dropdown-menu {
-  background-color: #FFF;
+  background-color: #ffffff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border: 1px solid #d8e0e1;
+  border-radius: var(--hdx-radius-md);
+  box-shadow: var(--hdx-shadow-md);
   display: none;
   float: left;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
   left: 0;
   list-style: none;
   margin: 2px 0 0;
@@ -1607,71 +387,58 @@ i[class^=humanitarianicons-] {
 }
 .dropdown-menu > li > a {
   clear: both;
-  color: #333;
+  color: #1f2324;
   cursor: pointer;
   display: block;
   font-weight: 400;
-  line-height: 1.42857143;
-  padding: 3px 20px;
+  line-height: 1.3;
+  padding: 0.25rem 1.25rem;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-  background-color: #F5F5F5;
-  color: #262626;
+  background-color: #f5f7f7;
+  color: #101212;
   text-decoration: none;
 }
 
 .legend {
+  align-items: center;
   display: flex;
   justify-content: flex-end;
-  margin: 20px 0 30px;
 }
 .legend .chip {
-  background-color: #FFF;
-  height: 13px;
-  margin: 0 4px 0 6px;
-  width: 13px;
+  background-color: #ffffff;
+  border-radius: var(--hdx-radius-sm);
+  display: inline-block;
+  height: 12px;
+  margin: 0 0.25rem 0 0.5rem;
+  vertical-align: middle;
+  width: 12px;
 }
 .legend .chip.chip-complete {
-  background-color: #2B78BC;
-  margin-left: 12px;
+  background-color: #0e3b82;
+  margin-left: 0.75rem;
 }
 .legend .chip.chip-incomplete {
-  background-color: #BBC9E7;
+  background-color: #4681e0;
 }
 .legend .chip.chip-nodata {
-  background-color: #E6E7E7;
+  background-color: #c4d0d1;
 }
 .legend .chip.chip-na {
-  border: 1px solid #BFBFBF;
-}
-
-.country-labels {
-  font-size: 13px;
-}
-.country-labels text {
-  text-anchor: start;
-  transform: rotate(-45deg);
-}
-
-.subcategory-labels {
-  font-size: 13px;
-  text-anchor: start;
-}
-.subcategory-labels .domain {
-  display: none;
+  border: 1px solid #b1c1c2;
 }
 
 .flag {
   border-radius: 50%;
-  margin-right: 4px;
+  margin-right: 0.25rem;
   vertical-align: -15px;
   width: 22px;
   transform: rotate(45deg);
 }
 
 .table-container {
-  margin-right: 10px;
+  margin-right: 0.5rem;
   margin-top: 150px;
 }
 .table-container table {
@@ -1679,11 +446,12 @@ i[class^=humanitarianicons-] {
   border-collapse: collapse;
 }
 .table-container th {
-  font-size: 12px;
-  padding-bottom: 6px;
+  color: #101212;
+  font-size: 0.75rem;
+  padding-bottom: 1rem;
 }
 .table-container th.rotate {
-  font-weight: normal;
+  font-weight: 400;
   white-space: nowrap;
 }
 .table-container th.rotate div {
@@ -1691,15 +459,15 @@ i[class^=humanitarianicons-] {
   width: 30px;
 }
 .table-container tr td {
-  border: 0.5px solid #BFBFBF;
-  font-size: 12px;
+  border: 0.5px solid #c4d0d1;
+  font-size: 0.75rem;
   height: 20px;
 }
 .table-container tr td.subcategory {
   border: 0;
-  border-top: 0.5px solid #BFBFBF;
-  border-bottom: 0.5px solid #BFBFBF;
+  color: #101212;
   cursor: pointer;
+  text-align: right;
   text-transform: capitalize;
   white-space: nowrap;
   width: 220px;
@@ -1711,39 +479,39 @@ i[class^=humanitarianicons-] {
   width: 30px;
 }
 .table-container tr td.subcategory i {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .table-container tr td.percentComplete {
-  color: #2E79BB;
+  color: #101212;
   cursor: pointer;
   font-weight: 600;
-  padding: 0 3px;
+  padding: 0 0.25rem;
   text-align: right;
 }
 .table-container tr td.NA {
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 .table-container tr td.Complete {
-  background-color: #2B78BC;
+  background-color: #0e3b82;
 }
 .table-container tr td.Incomplete {
-  background-color: #BBC9E7;
+  background-color: #4681e0;
 }
 .table-container tr td.Empty {
-  background-color: #E6E7E7;
+  background-color: #c4d0d1;
 }
 .table-container tr {
-  background-color: #FFF;
+  background-color: #ffffff;
   transition: background-color 0.5s ease-out, opacity 0.1s ease-in-out;
 }
 .table-container tr.active {
-  background-color: #F7DBD8;
+  background-color: #d1e0f7;
 }
 .table-container tr.countryPctComplete td {
-  color: #2E79BB;
+  color: #101212;
   cursor: pointer;
   font-weight: 600;
-  padding: 0 3px;
+  padding: 0 0.25rem;
   text-align: right;
 }
 .table-container tr.countryPctComplete td.subcategory, .table-container tr.countryPctComplete td.percentComplete {
@@ -1756,23 +524,25 @@ i[class^=humanitarianicons-] {
 }
 
 .tooltip {
-  background-color: #000;
-  border: 0px;
-  border-radius: 4px;
-  color: #FFF;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 11px;
-  padding: 8px;
+  background-color: #1f2324;
+  border: 0;
+  border-radius: var(--hdx-radius-sm);
+  box-shadow: var(--hdx-shadow-md);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
   pointer-events: none;
   position: absolute;
   text-align: center;
+  white-space: nowrap;
   width: auto;
 }
 .tooltip:before {
   bottom: 0;
   border: 6px solid transparent;
   border-bottom: 0;
-  border-top: 6px solid #000;
+  border-top: 6px solid #1f2324;
   content: "";
   display: block;
   position: absolute;
@@ -1788,19 +558,19 @@ i[class^=humanitarianicons-] {
 
 @media only screen and (max-width: 768px) {
   main {
-    padding: 0 10px;
+    padding: 0 0.5rem;
   }
   h2 {
     align-items: center;
-    font-size: 13px;
-    line-height: 16px;
-    padding: 5px 15px;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    padding: 0.25rem 1rem;
   }
   .control-order-by .orderDropdown .dropdown-toggle {
     white-space: nowrap;
   }
   .control-order-by .orderDropdown .dropdown-toggle-text {
-    font-size: 13px;
+    font-size: 0.75rem;
   }
 }
 
