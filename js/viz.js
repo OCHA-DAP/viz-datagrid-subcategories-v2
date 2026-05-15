@@ -3,10 +3,17 @@ const PCT_COMPLETE_SUBCATEGORY = 'https://docs.google.com/spreadsheets/d/e/2PACX
 const PCT_COMPLETE_COUNTRY = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRguxePjzXGhVXDTL6-JuS5Vppx7fKnk-CBheunS_5RGDKV36tOfLHa5RZ94oO2pDCLcdNC8BBisJzT/pub?gid=579688831&single=true&output=csv';
 
 const pctFormat = d3.format('.0%');
-let columns, items = [];
-let iconMap, countryMap, sortOrder = 'dsc', tooltip;
+let columns, items = [], originalItems = [];
+let iconMap, countryMap, sortOrder = 'category', tooltip;
 
 const isMetaCol = col => col === 'subcategory' || col === 'percentComplete';
+
+const statusLabel = {
+  'Complete':   'Available & up-to-date',
+  'Incomplete': 'Available, not up-to-date',
+  'Empty':      'Unavailable',
+  'NA':         'Not applicable'
+};
 
 function getData() {
   Promise.all([
@@ -74,6 +81,7 @@ function getData() {
     });
 
     items.push(pctCountryValues);
+    originalItems = [...items];
 
     createTable();
   });
@@ -106,16 +114,28 @@ function initDisplay() {
 }
 
 function sortTable() {
-  let pctRow = items.pop();
-  items.sort(function(a, b) {
-    return sortOrder === 'dsc'
-      ? d3.descending(a.percentComplete, b.percentComplete)
-      : d3.ascending(a.percentComplete, b.percentComplete);
-  });
-  items.push(pctRow);
+  if (sortOrder === 'category') {
+    items = [...originalItems];
+  } else {
+    let pctRow = items.pop();
+    items.sort(function(a, b) {
+      return sortOrder === 'dsc'
+        ? d3.descending(a.percentComplete, b.percentComplete)
+        : d3.ascending(a.percentComplete, b.percentComplete);
+    });
+    items.push(pctRow);
+  }
 
-  d3.select('tbody').selectAll("*").remove();
-  buildRows();
+  d3.select('tbody').selectAll('tr')
+    .transition()
+    .duration(80)
+    .style('opacity', 0)
+    .end()
+    .catch(() => {})
+    .then(() => {
+      d3.select('tbody').selectAll('*').remove();
+      buildRows();
+    });
 }
 
 
@@ -152,9 +172,10 @@ function buildRows() {
   rows
       .style('opacity', 0)
       .transition()
-      .duration(0)
+      .duration(120)
       .delay(function(d, i) {
-        return i*20;
+        if (i === items.length - 1) return (items.length - 1) * 7;
+        return sortOrder === 'asc' ? (items.length - 2 - i) * 7 : i * 7;
       })
       .style('opacity', 1);
 
@@ -187,47 +208,50 @@ function buildRows() {
       return content;
     })
     .on('mouseover', function(event, d) {
-      if (event.target.classList.contains('completeness')) {
-        event.target.parentElement.classList.add('active');
+      const row = event.target.parentElement;
+      if (!row.classList.contains('countryPctComplete')) row.classList.add('active');
+
+      const colIndex = event.target.cellIndex;
+      document.querySelectorAll('thead th')[colIndex]?.classList.add('active');
+
+      let content = '';
+      if (d.name === 'subcategory') {
+        content = d.category;
+      } else if (d.name === 'percentComplete') {
+        content = `Available % of ${d.subcategory}: <strong>${pctFormat(d.value)}</strong>`;
+      } else if (d.category === 'countryPctComplete') {
+        content = `Available % of ${d.name}: <strong>${pctFormat(d.value)}</strong>`;
+      } else {
+        content = `${d.subcategory} - ${d.name}: ${statusLabel[d.value] || d.value}`;
       }
-      if (isMetaCol(d.name) || d.category==='countryPctComplete') {
-        let content = '';
-        if (d.name==='subcategory')
-          content = d.category;
-        if (d.name==='percentComplete')
-          content = 'Available % of ' + d.subcategory;
-        if (d.category==='countryPctComplete')
-          content = 'Available % of ' + d.name;
 
-        tooltip.transition()
-          .duration(200)
-          .style('opacity', .9);
+      const tooltipNode = tooltip.node();
+      tooltip.html(content);
+      tooltip.transition().duration(200).style('opacity', .9);
 
-        const tooltipNode = tooltip.node();
-        tooltip.html(content);
+      const posEl = d.name === 'subcategory'
+        ? (event.target.querySelector('.icon-container') || event.target)
+        : event.target;
+      const targetRect = posEl.getBoundingClientRect();
+      const targetTop = targetRect.top + window.scrollY;
+      const targetLeft = targetRect.left + window.scrollX;
+      const targetWidth = posEl.offsetWidth;
+      const tooltipHeight = tooltipNode.offsetHeight;
+      const tooltipWidth = tooltipNode.offsetWidth;
+      const isPercentComplete = event.target.className === 'percentComplete';
 
-        const targetRect = event.target.getBoundingClientRect();
-        const targetTop = targetRect.top + window.scrollY;
-        const targetLeft = targetRect.left + window.scrollX;
-        const targetWidth = event.target.offsetWidth;
-        const tooltipHeight = tooltipNode.offsetHeight;
-        const tooltipWidth = tooltipNode.offsetWidth;
-        const isPercentComplete = event.target.className === 'percentComplete';
-
-        tooltip
-          .style('top', (targetTop - tooltipHeight) + 'px')
-          .style('left', (isPercentComplete
-            ? targetLeft + targetWidth - tooltipWidth
-            : targetLeft + targetWidth / 2 - tooltipWidth / 2) + 'px')
-          .classed('right', isPercentComplete);
-      }
+      tooltip
+        .style('top', (targetTop - tooltipHeight) + 'px')
+        .style('left', (isPercentComplete
+          ? targetLeft + targetWidth - tooltipWidth
+          : targetLeft + targetWidth / 2 - tooltipWidth / 2) + 'px')
+        .classed('right', isPercentComplete);
     })
     .on('mouseout', function(event, d) {
       event.target.parentElement.classList.remove('active');
-      tooltip.transition()
-        .duration(500)
-        .style('opacity', 0);
-     });
+      document.querySelectorAll('thead th.active').forEach(th => th.classList.remove('active'));
+      tooltip.transition().duration(500).style('opacity', 0);
+    });
 }
 
 getData();
