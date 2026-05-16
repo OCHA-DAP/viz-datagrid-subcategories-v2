@@ -434,7 +434,6 @@ i[class^=humanitarianicons-] {
 .table-container table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
 }
 .table-container th {
   color: #101212;
