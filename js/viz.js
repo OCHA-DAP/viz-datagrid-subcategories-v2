@@ -157,13 +157,6 @@ function createTable() {
   table.append('tbody');
   buildRows();
   document.querySelector('.loader').style.display = 'none';
-  notifyHeight();
-}
-
-function notifyHeight() {
-  requestAnimationFrame(() => {
-    window.parent.postMessage({ iframeHeight: document.body.scrollHeight }, '*');
-  });
 }
 
 
