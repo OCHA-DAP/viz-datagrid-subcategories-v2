@@ -239,12 +239,14 @@ function buildRows() {
       const tooltipHeight = tooltipNode.offsetHeight;
       const tooltipWidth = tooltipNode.offsetWidth;
       const isPercentComplete = event.target.className === 'percentComplete';
+      const rawLeft = isPercentComplete
+        ? targetLeft + targetWidth - tooltipWidth
+        : targetLeft + targetWidth / 2 - tooltipWidth / 2;
+      const clampedLeft = Math.max(8, Math.min(rawLeft, window.innerWidth - tooltipWidth - 8));
 
       tooltip
         .style('top', (targetTop - tooltipHeight) + 'px')
-        .style('left', (isPercentComplete
-          ? targetLeft + targetWidth - tooltipWidth
-          : targetLeft + targetWidth / 2 - tooltipWidth / 2) + 'px')
+        .style('left', clampedLeft + 'px')
         .classed('right', isPercentComplete);
     })
     .on('mouseout', function(event, d) {
