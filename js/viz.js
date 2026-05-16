@@ -161,7 +161,9 @@ function createTable() {
 }
 
 function notifyHeight() {
-  window.parent.postMessage({ iframeHeight: document.body.scrollHeight }, '*');
+  requestAnimationFrame(() => {
+    window.parent.postMessage({ iframeHeight: document.body.scrollHeight }, '*');
+  });
 }
 
 
