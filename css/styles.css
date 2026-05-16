@@ -263,7 +263,7 @@ h2 {
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.25rem;
+  padding: 1rem 0;
 }
 
 .header-left .subtitle {
